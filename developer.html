@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Baffupcity &mdash; Developer</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/ico" href="LOGO/city.JPG">
+
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="css/colors.css">
+   
+    <link rel="stylesheet" href="css/versions.css">
+    
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <link rel="stylesheet" href="css/custom.css"></head>
+<style>
+    @import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
+body {
+  background:black;
+  font-family: 'Lily Script One';
+}
+.bbn{
+    font-size: 18px;
+    color:white;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 289px;
+  height: 300px;
+  margin: -150px;
+  float: left;
+  perspective: 500px;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  line-height: 330px;
+  background-image: url('LOGO/dev.jpg');
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.back {
+    background-image: url('LOGO/dev.jpg');
+    
+
+  color: white;
+  transform: rotateY( 180deg );
+}
+
+
+.fa, .fas {
+    font-family: 'FontAwesome';
+}
+
+.container-dev{
+  align-items: center;
+}
+
+li:hover {
+    transform: translateY(-4px);
+    transition:0.3s;
+}
+
+.sidenav{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background:#000; 
+	overflow-x: hidden;
+	border: 1px solid grey;
+	padding-top: 60px;
+	transition: 0.5s;
+}
+.link{
+	padding: 5px;
+	font-size: 5px;
+}
+
+
+.pointer:hover{
+	color: white;
+}
+.sidenav a{
+	font-family: 'Times New Roman';
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 16px;
+	color:grey;
+	display: block;
+	padding: 11px;
+	transition: 0.3s;
+}
+.sidenav a:hover{
+	color:white;
+}
+.sidenav .closebtm{
+	position: absolute;
+	top:0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+#main{
+	transition: margin-left.5s;
+	padding: 20px;
+}
+@media screen and (max-height: 450px){
+	.sidenav{padding-top:15px;}
+	.sidenav a{font-size: 18px;}
+}
+.open{
+	font-family:times new roman;
+  font-style: italic;
+	color: white;
+	cursor: pointer;
+	font-size: 20px;
+	float: left;
+}
+</style>
+<body class="body">
+    <div class="bbn">
+      <div id="mySidenav"
+      class="sidenav">
+        <a 
+        href="javascript:void(0)"
+        class="closebtn"
+        onclick="closeNav()">&times;
+        </a>
+        <a href="index.html" class="link">HOME</a>
+        <a href="wedding.html" class="link">WEDDING</a>
+        <a href="native.html" class="link">NATIVE</a>
+        <a href="morden.html" class="link">MORDEN</a>
+        <a href="shoes&sandals.html" class="link">SHOES&SANDALS</a>
+        <a href="accesories.html" class="link">ACCESSORIES</a>
+        <a href="index.html" class=""></a>
+        <a href="index.html" class=""></a>
+        <a href="index.html" class=""></a>
+        
+      </div>
+        <span
+        onclick="openNav()" class="open">Back</span>	
+        <div class="main">
+          
+        </div>	
+      </div>
+	</div>
+    <div class="card">
+      <div align="center">       
+        <a href="https://www.abegundeebenezer2004@gmail.com" class="btn grd1" ><i class="fa fa-envelope-o"></i></a>
+        <a href="https://www.instagram.com/_iamebenezer/channel/" class="btn grd1"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com/iamebenezer" class="btn grd1"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/ebenezer-abegunde-008b831b0/" class="btn grd1"><i class="fa fa-linkedin"></i></a>
+      </div>
+        <div class="content">
+          <div class="front">
+            Web.Developer/owner
+          </div>
+        
+        
+         
+          <div class="back">
+            
+            Ebenezer Abegunde
+            
+     
+              
+          </div>
+          </div>
+          </div>
+         
+        </div>
+        
+      </div>
+      
+
+      <script src="js/all.js"></script>
+      <script src="js/responsive-tabs.js"></script>
+        
+        <script src="js/custom.js"></script>
+    
+        <script>
+          /* Open the sidenav */
+          function openNav(){
+      document.getElementById("mySidenav").style.width="250px";
+      }
+          /* Close/hide the sidenav */
+      function closeNav(){
+        document.getElementById("mySidenav").style.width="0";
+      }
+      </script>
+      
+      </body>
+
+
+</html>
